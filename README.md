@@ -1,7 +1,5 @@
 
-# Welcome to Kenzie Snippets!
-
-You will be using this app to explore the architecture of a Full-Stack MERN Application.  
+# Kenzie MERN Starter Template
 
 ## Getting Started
 
