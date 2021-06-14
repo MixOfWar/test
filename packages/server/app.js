@@ -8,7 +8,6 @@ import mongoose from 'mongoose'
 import keys from './config/keys'
 import router from './routes'
 import { requestLogger, errorHandler } from './middleware'
-import seedDatabase from './seedDatabase'
 
 const createError = require('http-errors')
 
@@ -21,7 +20,6 @@ mongoose.connect(keys.database.url, {
 
 mongoose.connection.on('connected', () => {
   console.log('connected to mongoDB')
-  seedDatabase()
 })
 
 mongoose.connection.on('error', (err) => {

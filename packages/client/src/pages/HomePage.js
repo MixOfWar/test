@@ -11,7 +11,7 @@ export default function HomePage(props) {
       { error && <h3 style={{color:"red"}}>Error Loading Data: {error}</h3>}
       { isLoading &&  <LoadingSpinner></LoadingSpinner>}
       { !error && response && (
-        <div>Username: {response.userName}</div>
+        <div>Username: {response.username}</div>
       )}
     </main>
   )
