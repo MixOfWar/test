@@ -1,10 +1,11 @@
+var repoName = require('git-repo-name');
 module.exports = {
   app: {
     name: 'MERN Starter Template',
     apiEndpoint: (process.env.API_URL) ? `/${process.env.API_URL}` : '/api',
   },
   database: {
-    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/mern-starter-template',
+    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/' + repoName.sync("../../"),
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'jwt-secret',
