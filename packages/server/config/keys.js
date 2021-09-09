@@ -6,7 +6,7 @@ module.exports = {
     apiEndpoint: (process.env.API_URL) ? `/${process.env.API_URL}` : '/api',
   },
   database: {
-    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/' + repoName,
+    url: "mongodb+srv://dbUser:VRKwfLgC3zCaWbPM@cluster0.yzek9.mongodb.net/Cluster0?retryWrites=true&w=majority" //process.env.MONGODB_URI || 'mongodb://localhost:27017/' + repoName,
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'jwt-secret',
