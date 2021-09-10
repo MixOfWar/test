@@ -1,4 +1,4 @@
-import 'dotenv/config'
+// import 'dotenv/config'
 import express from 'express'
 import path from 'path'
 import cookieParser from 'cookie-parser'
@@ -37,7 +37,7 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(requestLogger)
 
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../../client/build')));
 
 // api router
 app.use(keys.app.apiEndpoint, router)

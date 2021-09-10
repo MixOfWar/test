@@ -4,10 +4,16 @@
  * Module dependencies.
  */
 
-const app = require('../app')
-const debug = require('debug')('server:server')
-const http = require('http')
-const chalk = require('chalk')
+import app from "../app.js";
+// import debug from "server";
+import http from "http";
+import chalk from "chalk"
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+// const app = require('../app')
+// const debug = require('debug')('server:server')
+// const http = require('http')
+// const chalk = require('chalk')
 
 /**
  * Get port from environment and store in Express.
@@ -83,7 +89,7 @@ function onError(error) {
 function onListening() {
   const addr = server.address()
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
-  debug('Listening on ' + bind)
+  // debug('Listening on ' + bind)
   console.log(
     `${chalk.green('✓')} ${chalk.blue(
       `Listening on port ${port}. Visit http://localhost:${port}/ in your browser.`

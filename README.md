@@ -1,4 +1,3 @@
-
 # Kenzie MERN Starter Template
 
 ## Getting Started
@@ -15,7 +14,9 @@ Follow the steps for your operating system to install yarn.
 
 ### MongoDB
 
-Install MongoDB and start your server: [MongoDB instructions](https://docs.mongodb.com/manual/administration/install-community/)
+**To use Cloud MongoDB Atlas:** Follow the instructions in the Deployment Reading on my.kenzie.academy
+
+**To use Local MongoDB:** Install MongoDB and start your server: [MongoDB instructions](https://docs.mongodb.com/manual/administration/install-community/)
 
 #### Mac OS
 
@@ -77,8 +78,18 @@ yarn install
 You can start the entire application by doing: 
 
 ```
+yarn develop
+```
+
+This will live-reload all of the code as you edit it.
+
+The deployment itself will run:
+
+```
 yarn start
 ```
+
+But this WILL NOT do live-reload.  If you run the app with yarn start then you will have to stop your server and restart it every time you make a change!  So it is much better to use yarn develop when coding locally.
 
 _Note that you must be in the root folder of this repository to run both the front and backend!_
 
