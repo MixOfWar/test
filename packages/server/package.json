@@ -7,7 +7,7 @@
     "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
     "develop": "node_modules/.bin/nodemon --exec babel-node ./src/bin/www",
-    "start": "npm run build && node ./build/bin/www.js"
+    "start": "node ./build/bin/www.js"
   },
   "dependencies": {
     "await-exec": "^0.1.2",
