@@ -1,8 +1,6 @@
-let gitRepoName = require('git-repo-name');
-let repoName = gitRepoName.sync("../../");
 module.exports = {
   app: {
-    name: repoName,
+    name: "MERN App",
     apiEndpoint: (process.env.API_URL) ? `/${process.env.API_URL}` : '/api',
   },
   database: {
