@@ -10,10 +10,14 @@
     "concurrently": "^5.3.0"
   },
   "scripts": {
+    "build": "yarn workspace client build && yarn workspace server build",
     "client": "yarn workspace client start",
     "server": "yarn workspace server develop",
     "develop": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\"",
     "prestart": "yarn workspace client build",
     "start": "yarn workspace server start"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
